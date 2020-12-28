@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Filtered Network Listener</title>
+    <script src="popup.js"></script>
+    <script src="listener.js"></script>
+    <style>
+        .container{
+            width: 400px;
+            height: auto;
+        }
+
+        h1{
+            text-align: center;
+        }
+        input[type=text]{
+            width: 100%;
+            padding: 10px 15px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button{
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            background-color: #615cf5;
+            color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button:hover{
+            background-color: #4541a5;
+        }
+        .button-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <h1>Filtered Network Listener</h1>
+          <p>This Extension allows you get response from network to console from a specific url.</p>
+          <input id="filteredUrlInput" type="text" placeholder="Enter a keyword that part of a url"></input>
+            <div class="button-container">
+                <button id="filteredFilterButton">Filter Now!</button>
+                <button id="removeFilter">Remove Filter</button>
+            </div>
+      </div>
+  </body>
+</html>
